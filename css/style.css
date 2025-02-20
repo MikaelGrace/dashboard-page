@@ -1,5 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -10,8 +12,9 @@ body {
   .container {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
+    grid-template-columns: repeat(1, 1fr) repeat(1, 3fr);
     gap: 4px;
+    background-color: lightblue;
     
   }
   
@@ -25,20 +28,101 @@ body {
   
   .header {
     /* background-color: #393f4d; */
+    /* background-color: lightcoral; */
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px 30px 20px 30px;
   }
 
   .icon {
     height: 20px;
     width: 20px;
+    fill: white;
+  }
+
+  .search-section {
+    /* padding: 10px; */
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+
+  #search {
+    /* width: 80%; */
+    border-radius: 20px;
+    height: 35px;
+    border: 1px solid lightgray;
+    flex: 1;
+    background-color: lightgray;
+  }
+
+  .search-icon {
+    /* width: 15%; */
+    height: 40px;
+  }
+
+  .notification-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50px;
+    box-sizing: border-box;
+    gap: 30px;
+    padding-right: 10px;
+  }
+
+  .notification-icon, .name {
+    margin-top: 10px;
+  }
+  .avatar-small {
+    height: 40px;
+    width: 40px;
+    border: 0px solid white;
+    border-radius: 20px;
+  }
+
+  .greeting-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+
+  .avatar-big {
+    height: 70px;
+    width: 70px;
+    border: 0px solid white;
+    border-radius: 35px;
+  }
+  .btn-section {
+    display: flex;
   }
   
-  .menu ul,
-  .menu li {
-    font-size: 16px;
-  }
+.btn-section ul {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    /* align-items: center;
+    justify-content: flex-end; */
+    align-items: center;
+}
+
+.btn-section ul li {
+    list-style: none;
+    padding: 5px;
+    background-color: #00a3e0;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-section ul li a {
+    text-decoration: none;
+    color: white;
+}
   
   .menu ul {
     display: grid;
@@ -50,7 +134,7 @@ body {
   }
   
   .sidebar {
-    background-color: #C50208;
+    background-color: #00a3e0;
     grid-column: 1 / 1;
     grid-row: 2 / 5;
     display: grid;
