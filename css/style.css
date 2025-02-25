@@ -218,9 +218,13 @@ li {
   grid-column: 2 / 4;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  padding: 40px 20px;
+  padding: 20px 20px;
   background-color: #f5f5f5;
-  gap: 10px;
+  gap: 20px;
+}
+
+h2 {
+  text-align: left;
 }
 
 .article {
@@ -259,9 +263,38 @@ li {
   margin-right: 5px;
 }
 
-
-
 .announcement-trending-panel {
   grid-column: 2 / 2;
+  grid-row: 1 / 4;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.announcement, .trending {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px 0px #d3d3d3;
+}
+
+.trending img {
+  height: 40px;
+  width: 40px;
+}
+
+.trending-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.trending-card div .title {
+  font-weight: 800;
+  font-size: 16px;
+  text-align: left;
 }
   
